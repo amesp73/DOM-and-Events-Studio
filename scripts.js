@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
        if (response) {
            status.innerHTML = "Shuttle in flight";
            shuttleBackground.style.background = "blue";
-           spaceShuttleHeight += 10000;
+           spaceShuttleHeight.innerHTML = 10000;
        } else {
 
        }
