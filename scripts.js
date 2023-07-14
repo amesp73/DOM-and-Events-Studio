@@ -3,6 +3,8 @@
 
 window.addEventListener("load", function() {
     let status = this.document.getElementById("flightStatus");
+    let shuttleBackground = this.document.getElementById("shuttleBackground");
+    let spaceShuttleHeight = this.document.getElementById("spaceShuttleHeight");
 
     let upButton = this.document.getElementById("up");
     let downButton = this.document.getElementById("down");
@@ -17,6 +19,8 @@ window.addEventListener("load", function() {
        let response = window.confirm("Confirm that the shuttle is ready for takeoff.");
        if (response) {
            status.innerHTML = "Shuttle in flight";
+           shuttleBackground.style.background = "blue";
+           spaceShuttleHeight += 10000;
        } else {
 
        }
